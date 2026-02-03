@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.container {
+    height: 100vh;
+    background-color: rgb(185, 220, 115);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .box {
+    width: 75%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2vw;
+    overflow: hidden;
+    display: none;
+}
+
+.box .nav {
+    width: 100%;
+    height: 12%;
+    background-color: olivedrab;
+    display: flex;
+    padding: 1vw 4vw;
+    justify-content: space-between;
+    align-items: center;
+    color: blanchedalmond;
+}
+
+.nav h3 {
+    font-size: 1.6rem;
+}
+
+/* .nav h3 span{
+    background-color: rgb(231, 220, 207);
+} */
+.box .board {
+    flex-grow: 1;
+    background-color: blanchedalmond;
+    display: grid;
+    padding: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+}
+
+.cell {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: blanchedalmond;
+    background-color: olivedrab;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.game-start {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(141, 194, 34, 0.688);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    /* scroll-behavior: auto; */
+}
+
+.playcard {
+    min-width: 35vw;
+    height: 80vh;
+    border-radius: 8%;
+    overflow: hidden;
+    background: linear-gradient(#c68642, #9b5a20);
+    border-radius: 18px;
+    padding: 2rem 2.5rem;
+    box-shadow:
+        inset 0 6px 0 rgba(255, 255, 255, 0.2),
+        0 15px 30px rgba(0, 0, 0, 0.35);
+    border: 6px solid #6f3e12;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.playcard .header {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #fff3c4;
+    text-shadow:
+        0 3px 0 #5b2d0c,
+        0 6px 10px rgba(0, 0, 0, 0.4);
+    letter-spacing: 2px;
+}
+
+.playcard .maincard {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.maincard button {
+    padding: 12px 18px;
+    border-radius: 14px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: #56b320;
+    color: #ffffff;
+    box-shadow: 0 6px 0 #2f7c20,
+        0 10px 16px rgba(0, 0, 0, .25);
+}
+
+.rules {
+    font-size: .95rem;
+    color: #555;
+    margin-bottom: 1.8rem;
+    line-height: 1.6;
+    background-color: #fff3c4;
+    border-radius: 20px;
+    padding: 1rem 2rem;
+    display: none;
+}
+
+.game-end{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(141, 194, 34, 0.688);
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.game-end .playcard{
+    height: 40vh;
+}
+
+
+.img{
+    height: 52vh;
+    width: 30vw;
+    border-radius: 5%;
+    overflow: hidden;
+}
+
+
+img{
+    height: 100%;
+    width: 100%;
+}

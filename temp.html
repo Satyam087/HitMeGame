@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .game-start {
+            position: fixed;
+            inset: 0;
+            background: rgba(185, 220, 115, 0.95);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 20;
+        }
+
+        .start-card {
+            background: blanchedalmond;
+            padding: 3rem 3.5rem;
+            border-radius: 1.2rem;
+            text-align: center;
+            width: min(90%, 420px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .start-card h1 {
+            font-size: 2.2rem;
+            color: olivedrab;
+            margin-bottom: .5rem;
+        }
+
+        .subtitle {
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+            color: #444;
+        }
+
+        .rules {
+            font-size: .95rem;
+            color: #555;
+            margin-bottom: 1.8rem;
+            line-height: 1.6;
+        }
+
+        .start-btn {
+            border: none;
+            padding: .8rem 2rem;
+            font-size: 1rem;
+            border-radius: 999px;
+            background: olivedrab;
+            color: blanchedalmond;
+            cursor: pointer;
+            transition: transform .15s ease, box-shadow .15s ease;
+        }
+
+        .start-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, .2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game-start">
+        <div class="start-card">
+            <h1>Hit Me</h1>
+
+            <p class="subtitle">
+                Hit the number shown before time runs out.
+            </p>
+
+            <div class="rules">
+                <p>• You have 10 seconds for each round</p>
+                <p>• Click the correct number to continue</p>
+                <p>• Wrong click or timeout = Game Over</p>
+            </div>
+
+            <button class="start-btn">Start Game</button>
+        </div>
+    </div>
+</body>
+
+</html>
