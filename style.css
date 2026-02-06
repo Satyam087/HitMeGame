@@ -151,7 +151,7 @@ html {
     display: none;
 }
 
-.game-end{
+.game-end {
     height: 100vh;
     width: 100%;
     background-color: rgba(141, 194, 34, 0.688);
@@ -162,11 +162,12 @@ html {
     align-items: center;
     display: none;
 }
-.game-end .playcard{
+
+.game-end .playcard {
     height: 50vh;
 }
 
-.maincard h2{
+.maincard h2 {
     padding-left: 1vw;
     text-align: left;
     font-size: 2vw;
@@ -177,7 +178,7 @@ html {
         0 6px 10px rgba(0, 0, 0, 0.4);
 }
 
-.img{
+.img {
     height: 52vh;
     width: 30vw;
     border-radius: 5%;
@@ -185,7 +186,72 @@ html {
 }
 
 
-img{
+img {
     height: 100%;
     width: 100%;
+}
+
+@media (max-width: 600px) {
+    .container .box {
+        width: 95%;
+        height: 85%;
+    }
+
+    .box .nav {
+        padding: 1vw 2vw;
+    }
+
+    .nav h3 {
+        font-size: 0.8rem;
+    }
+
+    .box .board {
+        grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+        grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
+        padding: 16px;
+    }
+
+    .cell {
+        height: 50px;
+        width: 50px;
+        font-size: 0.9rem;
+    }
+
+    .playcard {
+        min-width: 90vw;
+        height: auto;
+        max-height: 85vh;
+        padding: 1.5rem;
+    }
+
+    .playcard .header {
+        font-size: 1.8rem;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .img {
+        width: 100%;
+        height: 25vh;
+        margin-bottom: 1rem;
+    }
+
+    .playcard .maincard {
+        gap: 1rem;
+    }
+
+    .maincard button {
+        font-size: 1.2rem;
+        padding: 10px 15px;
+    }
+
+    .maincard h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .game-end .playcard {
+        height: auto;
+    }
 }
