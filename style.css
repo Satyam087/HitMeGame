@@ -163,9 +163,19 @@ html {
     display: none;
 }
 .game-end .playcard{
-    height: 40vh;
+    height: 50vh;
 }
 
+.maincard h2{
+    padding-left: 1vw;
+    text-align: left;
+    font-size: 2vw;
+    line-height: 0.5;
+    color: antiquewhite;
+    text-shadow:
+        0 3px 0 #5b2d0c,
+        0 6px 10px rgba(0, 0, 0, 0.4);
+}
 
 .img{
     height: 52vh;

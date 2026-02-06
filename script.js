@@ -10,7 +10,8 @@ const end_btn = document.querySelector('.end-btn');
 const end_screen = document.querySelector('.game-end');
 const game_screen = document.querySelector('.box');
 const restart_btn = document.querySelector('.restart-btn');
-
+const sc = document.querySelector('.sc span');
+const hc = document.querySelector('.hc span');
 //game constants
 const cellSize = 50;
 const incScore = 10;
@@ -135,6 +136,8 @@ function endGame(){
         highScore=score;
     }
     highscore.textContent = highScore;
+    sc.textContent=score;
+    hc.textContent=highScore;
     localStorage.setItem("highScore", highScore.toString());
     score=0;
 }
